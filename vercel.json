@@ -1,0 +1,28 @@
+{
+  "framework": "nextjs"
+}
+```
+
+**2. Create an empty `public/` folder** (add any empty file like `.gitkeep` inside it)
+
+---
+
+**Or** check if your files are in a subfolder - they need to be at the **root** of your repo:
+```
+your-repo/          ← root
+├── app/
+│   ├── layout.js
+│   ├── page.js
+│   └── globals.css
+├── public/         ← add this
+├── package.json
+├── next.config.js
+└── vercel.json     ← add this
+```
+
+**NOT** like this:
+```
+your-repo/
+└── bunny-website-nextjs/   ← wrong! files nested
+    ├── app/
+    └── package.json
